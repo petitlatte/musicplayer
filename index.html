@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang = "en">	
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+<title>Music Player</title>
+</head>
+<body>
+
+		
+	<h4>Select a Track:</h4>
+	<div id = "songList"></div>	
+	
+	<audio id = "player" ontimeupdate = "updateProgress()">
+	<source id = "source">
+		Audio not supported
+	</audio>
+	<div id = "controls">
+		
+	<i class="far fa-play-circle fa-5x" onClick="playAudio()"></i>
+	<i class="far fa-pause-circle fa-5x" onClick="pauseAudio()"></i>
+		<br>
+		<span id = "currentlyPlayingSong"></span><em><span id ="currentSong"></span></em>
+			
+	<progress id = "progress" value ="0" max = "100"></progress>
+		<p>Volume:</p>
+		<i class="fas fa-volume-down"></i>
+		<input type = "range" id = "volumeSlider" min = "0" max = "1" step = "0.01">
+		<i class="fas fa-volume-up"></i>
+	</div>	
+		
+<p>Music: <a href="https://www.bensound.com/" target = "_blank">Bensounds</a></p>
+	
+<script src = "js/script.js"></script>
+</body>
+</html>
