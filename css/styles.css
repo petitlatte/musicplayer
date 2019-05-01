@@ -1,20 +1,30 @@
 @charset "utf-8";
 
 body{
-	background: radial-gradient(#9696e4,#4545ee);
-	font-size:1.2em;
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 	width: 50%;
 	margin: 20px auto;
 	padding: 20px;
 	text-align: center;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	height: 100vh;
+}
+
+.container{
+	border-radius: 10px;
+	border: solid white 3px;
 }
 
 #song-list {
-	background: lightcyan;
-	border-radius: 10px;
-	text-align: left;	
+	text-align: center;	
 }
 
+ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
 li {
 	padding: 15px;
 }
@@ -23,15 +33,26 @@ li:hover, i:hover{
 	cursor:pointer;
 }
 
+li:hover{
+color:white;
+ background-color:rgba(34,193,195,1);
+transition: 1s ease;	
+}
+
+i:hover{
+	opacity: 0.3;
+	transition: 0.5s ease;	
+}
+
 #controls{
 	border: 1px lightgray solid;
 	border-radius: 10px;
-	background: lightcyan;
 	padding: 1.5em;
+background-color: rgba(255, 255, 255, .7);	
 }
 
 i{
-	color:red;
+	color:rgba(34,193,195,1);
 }
 
 progress {

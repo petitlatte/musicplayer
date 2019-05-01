@@ -8,7 +8,7 @@ const songs = [
 ]
 
 const createSongList = () => {
-	const list = document.createElement("ol")
+	const list = document.createElement("ul")
 
 for(let i = 0; i < songs.length; i++){
 	const item = document.createElement("li")
